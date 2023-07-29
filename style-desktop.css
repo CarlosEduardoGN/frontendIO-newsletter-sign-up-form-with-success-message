@@ -1,0 +1,297 @@
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto-Regular.ttf) format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto-Bold.ttf) format("truetype");
+    font-weight: bold;
+}
+
+:root{
+    --pale-navy: #36384D;
+    --vermellion: #FF6155;
+    --dark-navy: #242742;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--pale-navy);
+}
+
+
+
+main{
+    position: relative;
+    display: flex;
+    width: 1440px;
+    height: 1080px;
+    justify-content: center;
+    align-items: center;
+    background: var(--pale-navy);
+}
+.rect{
+    position: absolute;
+    top: 219px;
+    left:256px;
+    width: 928px;
+    height: 641px;
+    flex-shrink: 0;
+    border-radius: 36px;
+    background: #FFF;
+    box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
+}
+.title{
+    position: absolute;
+    top: 97px;
+    left: 64px;
+    color: var(--dark-navy);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Heading */
+    font-family: "Roboto";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 56px */
+}
+.description{
+    position: absolute;
+    top: 177px;
+    left: 64px;
+    color: var(--dark-navy);
+    width: 376px;
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Body */
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+.ball1, .ball2, .ball3{
+    position:absolute;
+    width: 21px;
+    height: 21px;
+    flex-shrink: 0;
+    left: 64px;
+}
+.ball1{
+    top: 250px;
+}
+.ball2{
+    top: 284px;
+}
+.ball3{
+    top: 319px;
+}
+.text1,.text2,.text3{
+    position: absolute;
+    left: 101px;
+    width: 339px;
+    color: var(--dark-navy);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Body */
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+.text1{
+    top: 249px;
+}
+.text2{
+    top: 283px;
+}
+.text3{
+    top: 317px;
+}
+.email-title{
+    position: absolute;
+    top: 381px;
+    left: 64px;
+    color: var(--dark-navy);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Body Small */
+    font-family: "Roboto";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 18px */
+}
+#email-input{
+    position: absolute;
+    top: 407px;
+    left: 64px;
+    width: 352px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid var(--grey-25, rgba(25, 24, 43, 0.25));
+    color: var(--dark-navy);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Body */
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    padding-left: 24px;
+}
+#email-input:hover{
+    cursor: pointer;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--dark-navy);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Body */
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    opacity: 0.5;
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--dark-navy);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Body */
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    opacity: 0.5;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--dark-navy);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Body */
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    opacity: 0.5;
+}
+#email-submit{
+    all: unset;
+    position: absolute;
+    top: 487px;
+    left: 64px;
+    width: 376px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--dark-navy);
+    color: var(--white, #FFF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Body (Bold) */
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 24px */
+} 
+#email-submit:hover{
+    cursor: pointer;
+    border-radius: 8px;
+    background: var(--gradient-1, linear-gradient(225deg, #FF6A3A 0%, #FF527B 100%));
+    box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+}
+.right-image{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 400px;
+    height: 593px;
+    flex-shrink: 0;
+}
+.top-image{
+    display: none;
+}
+#validemail{
+    display: none;
+    position: absolute;
+    top: 382px;
+    left: 332px;
+    width: 108px;
+    color: var(--vermellion);
+    text-align: right;
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Body Small */
+    font-family: "Roboto";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 18px */
+}
+input#email-input.unvalid{
+    border-radius: 8px;
+    border: 1px solid var(--vermellion);
+    background: rgba(255, 97, 85, 0.15);
+    color: var(--vermellion);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+
+
+
+
+
+
+/*CSS reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
